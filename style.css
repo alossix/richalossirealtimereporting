@@ -1,0 +1,290 @@
+/* Global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px solid #f00 !important; */
+}
+
+html {
+  font-family: "Lato", sans-serif;
+}
+
+body {
+  font-size: calc(1rem + 0.1vw);
+  color: rgb(34, 34, 34);
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+h2 {
+  font-size: calc(1.3rem + 0.3vw);
+  font-family: "Poppins", sans-serif;
+  margin: 2rem 0rem;
+}
+
+h3 {
+  margin: 2rem 0rem;
+  font-family: "Poppins", sans-serif;
+  font-size: calc(1.2rem + 0.2vw);
+  text-align: center;
+}
+
+h4 {
+  font-family: "Poppins", sans-serif;
+  font-weight: lighter;
+}
+
+hr {
+  margin: 2rem 0rem;
+  border: 1px solid black;
+}
+
+p {
+  margin: 1rem 0rem;
+}
+
+.body__header {
+  font-family: "Poppins", sans-serif;
+}
+
+.contact__link {
+  text-align: center;
+  margin: 2rem auto;
+  width: 55vw;
+}
+
+.contact__link:hover {
+  text-decoration: underline;
+}
+
+/* Nav styles */
+.body__header {
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+}
+
+.nav__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 90vw;
+  margin: auto;
+  padding: 1rem 0rem;
+}
+
+.nav__title {
+  display: flex;
+  font-size: calc(1.3rem + 0.3vw);
+  flex: 2 1 auto;
+}
+
+.nav__links {
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+}
+
+.nav__link {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+  flex: 1 1 auto;
+  padding-left: 1rem;
+}
+
+.nav__link a {
+  position: relative;
+}
+
+.nav__link a:hover:after {
+  content: "";
+  border-bottom: 3px solid black;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: -1px;
+}
+
+/* Intro styles */
+.intro__title {
+  width: 60vw;
+  margin-left: 5vw;
+  padding: 2rem 0rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.intro__image {
+  width: 100%;
+  height: 100%;
+}
+
+.intro__wrapper {
+  margin-left: 5vw;
+  width: 60vw;
+}
+
+/* Remote styles */
+.remote {
+  width: 90vw;
+  margin: auto;
+}
+
+.remote__title {
+  text-align: center;
+}
+
+/* Experience styles */
+.experience {
+  width: 90vw;
+  margin: auto;
+}
+
+.experience__title {
+  text-align: center;
+}
+
+.experience li {
+  margin-left: 1rem;
+}
+
+.experience__wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 1rem;
+}
+
+.experience__wrapper img {
+  align-self: center;
+  width: calc(5rem + 2vw);
+  height: auto;
+}
+
+.card-left {
+  display: flex;
+  flex-direction: column;
+  border: 2.75px solid black;
+  padding: 1rem;
+}
+
+.card-center {
+  display: flex;
+  flex-direction: column;
+  border: 2.75px solid black;
+  padding: 1rem;
+}
+
+.card-right {
+  display: flex;
+  flex-direction: column;
+  border: 2.75px solid black;
+  padding: 1rem;
+}
+
+/* Scheduling styles */
+.scheduling {
+  width: 60vw;
+  margin: auto;
+  text-align: center;
+}
+
+.scheduling__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60vw;
+  margin: auto;
+}
+
+.scheduling__form label,
+.scheduling__form input,
+.scheduling__form textarea,
+.scheduling__form button {
+  width: 100%;
+  font-family: "Lato", sans-serif;
+  font-size: calc(1rem + 0.2vw);
+  padding: 0rem 1rem;
+  text-align: left;
+  border-radius: 25px;
+}
+
+.scheduling__form input:focus,
+.scheduling__form textarea:focus,
+.scheduling__form button:focus {
+  outline: none;
+  border: 1px solid #5b1b2d;
+}
+
+.scheduling__form label {
+  padding-left: 1rem;
+}
+
+.scheduling__form input {
+  height: 2rem;
+  background-color: rgb(240, 240, 240);
+  border: 1px solid #ddd;
+  margin-bottom: 1rem;
+}
+
+.scheduling__form textarea {
+  background-color: rgb(240, 240, 240);
+  border: 1px solid #ddd;
+  margin-bottom: 1rem;
+  padding-top: 0.8rem;
+}
+
+.scheduling__form button {
+  background: #5b1b2d;
+  color: white;
+  border-style: none;
+  height: 2rem;
+  text-align: center;
+  margin: 1rem 0rem 2rem 0rem;
+}
+
+.scheduling__form button:focus,
+.scheduling__form button:hover {
+  background: #922c47;
+}
+
+.footer {
+  background: rgb(34, 34, 34);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+@media only screen and (max-width: 800px) {
+  .nav__title {
+    justify-content: center;
+  }
+
+  .nav__links {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .nav__link {
+    padding-top: 0.5rem;
+  }
+
+  .intro__wrapper {
+    margin: auto;
+    width: 90vw;
+  }
+  .intro__title {
+    width: 90vw;
+    padding: 0.5rem 0rem;
+  }
+  .scheduling {
+    width: 90vw;
+  }
+
+  .scheduling__form {
+    width: 100%;
+  }
+}
